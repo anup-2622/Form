@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    padding: 10px;
+    // background-color: red;
+    max-width: 700px;
+    margin: 50px auto;
+
+    .btn{
+        border: none;
+        background-color: none;
+        padding: 7px 12px;
+        font-size: 18px ;
+        border-radius: 5px;
+        
+    }
+    .btn-add{
+background: #194064;
+    color: white;
+    cursor: pointer;
+    }
+}
+.addcontainer{
+    position:absolute;
+    background-color:rgb(0, 0, 0,0.2);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+    form{
+        width: 400px;
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        padding: 50px 30px;
+        box-shadow: 5px 5px 10px rgb(0,0,0,0.2);
+        border-radius: 5px;
+
+        .close-btn{
+            margin-left: auto;
+            font-size: 18px;
+            width: 20px;
+            height: 20px;
+            // background-color: rgba(186, 49, 49, 0.847);
+            cursor: pointer;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+
+        label{
+            font-size: 18px;
+            // padding:5px;
+        }
+        input{
+            font-size: 18px;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+        button{
+            background-color: rgba(65, 105, 225, 0.932);
+            color: white;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+    table{
+        border: 1px solid #c9c5c2;
+    }
+}
+
+.tablecontainer{
+    margin-top: 50px;
+    table{
+        thead , tbody{
+            tr{
+                background-color: #f0eaea;
+                th , td{
+                    min-width: 200px;
+                    padding: 6px;
+                    text-align: center;
+                    // background-color: red;
+                }
+                td{
+                    border-bottom: 1px solid  #c9c5c2;
+                }
+            }
+        }
+      
+    }
+}
